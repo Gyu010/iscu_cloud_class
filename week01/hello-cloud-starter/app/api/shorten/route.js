@@ -188,7 +188,8 @@ export async function POST(request) {
       { status: 200 }
     );
 
-  } catch {
+  } catch (error) {
+  console.error(error);
 
     /*
      * 7. 서버 내부 오류
