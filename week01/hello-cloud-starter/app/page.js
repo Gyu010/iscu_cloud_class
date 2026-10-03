@@ -72,6 +72,8 @@ export default function Home() {
 
       const data = await response.json();
 
+      console.log("response data:", data);
+
       if (!response.ok) {
         setError(data.error?.message || "요청 처리에 실패했습니다.");
         return;
