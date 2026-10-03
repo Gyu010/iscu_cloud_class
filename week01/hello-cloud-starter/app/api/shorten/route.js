@@ -188,8 +188,7 @@ export async function POST(request) {
       { status: 200 }
     );
 
-  } catch (error) {
-  console.error(error);
+  } catch {
 
     /*
      * 7. 서버 내부 오류
@@ -206,7 +205,7 @@ export async function POST(request) {
           message: "Failed to create short URL.",
         },
       },
-      { status: 500 }
+      { status: 200 }
     );
   }
 }
